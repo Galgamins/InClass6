@@ -18,5 +18,6 @@ for(var i = 0; i < liList.length; i++){
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
 var h2 = document.getElementsByTagName("h2")[0];
-var count = document.createTextNode(" " + i);
-h2.appendChild(count);
+var span = document.createElement("span");
+span.appendChild(document.createTextNode(i));
+h2.appendChild(span);
